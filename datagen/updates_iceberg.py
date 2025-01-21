@@ -103,4 +103,4 @@ if __name__ == "__main__":
         'access_key': 'admin',
         'secret_key': 'password'
     }
-    write_static_data('s3://datalake-demo-1995/raw')
+    write_static_data('s3://datalake-demo/raw')

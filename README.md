@@ -1,4 +1,4 @@
-# emr-apache-iceberg-workshop
+# Medallion Architecture with EMR Serverless and Apache Iceberg
 emr-apache-iceberg-workshop
 ![1731687994629](https://github.com/user-attachments/assets/14272ae0-0096-4a88-8506-30c094e91e73)
 

@@ -34,14 +34,14 @@ aws emr-serverless start-job-run \
     --execution-role-arn $IAM_ROLE \
     --job-driver '{
         "sparkSubmit": {
-            "entryPoint": "s3://soumilshah-dev-1995/jobs/raw-bronze.py",
+            "entryPoint": "s3://sonamdesai-dev/jobs/raw-bronze.py",
             "sparkSubmitParameters": "--conf spark.jars=/usr/share/aws/iceberg/lib/iceberg-spark3-runtime.jar --conf spark.sql.extensions=org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions --conf spark.sql.catalog.dev.warehouse=s3://XX/warehouse --conf spark.sql.catalog.dev=org.apache.iceberg.spark.SparkCatalog --conf spark.sql.catalog.dev.catalog-impl=org.apache.iceberg.aws.glue.GlueCatalog --conf spark.hadoop.hive.metastore.client.factory.class=com.amazonaws.glue.catalog.metastore.AWSGlueDataCatalogHiveClientFactory --conf spark.sql.catalog.job_catalog.io-impl=org.apache.iceberg.aws.s3.S3FileIO --conf spark.sql.sources.partitionOverwriteMode=dynamic --conf spark.sql.iceberg.handle-timestamp-without-timezone=true"
         }
     }' \
     --configuration-overrides '{
         "monitoringConfiguration": {
             "s3MonitoringConfiguration": {
-                "logUri": "s3://soumilshah-dev-1995/logs/"
+                "logUri": "s3://sonamdesai-dev/logs/"
             }
         }
     }'
@@ -56,14 +56,14 @@ aws emr-serverless start-job-run \
     --execution-role-arn $IAM_ROLE \
     --job-driver '{
         "sparkSubmit": {
-            "entryPoint": "s3://soumilshah-dev-1995/jobs/bronze-silver.py",
+            "entryPoint": "s3://sonamdesai-dev/jobs/bronze-silver.py",
             "sparkSubmitParameters": "--conf spark.jars=/usr/share/aws/iceberg/lib/iceberg-spark3-runtime.jar --conf spark.sql.extensions=org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions --conf spark.sql.catalog.dev.warehouse=s3://XX/warehouse --conf spark.sql.catalog.dev=org.apache.iceberg.spark.SparkCatalog --conf spark.sql.catalog.dev.catalog-impl=org.apache.iceberg.aws.glue.GlueCatalog --conf spark.hadoop.hive.metastore.client.factory.class=com.amazonaws.glue.catalog.metastore.AWSGlueDataCatalogHiveClientFactory --conf spark.sql.catalog.job_catalog.io-impl=org.apache.iceberg.aws.s3.S3FileIO --conf spark.sql.sources.partitionOverwriteMode=dynamic --conf spark.sql.iceberg.handle-timestamp-without-timezone=true"
         }
     }' \
     --configuration-overrides '{
         "monitoringConfiguration": {
             "s3MonitoringConfiguration": {
-                "logUri": "s3://soumilshah-dev-1995/logs/"
+                "logUri": "s3://sonamdesai-dev/logs/"
             }
         }
     }'
@@ -83,14 +83,14 @@ aws emr-serverless start-job-run \
     --execution-role-arn $IAM_ROLE \
     --job-driver '{
         "sparkSubmit": {
-            "entryPoint": "s3://soumilshah-dev-1995/jobs/raw-bronze.py",
+            "entryPoint": "s3://sonamdesai-dev/jobs/raw-bronze.py",
             "sparkSubmitParameters": "--conf spark.jars=/usr/share/aws/iceberg/lib/iceberg-spark3-runtime.jar --conf spark.sql.extensions=org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions --conf spark.sql.catalog.dev.warehouse=s3://XX/warehouse --conf spark.sql.catalog.dev=org.apache.iceberg.spark.SparkCatalog --conf spark.sql.catalog.dev.catalog-impl=org.apache.iceberg.aws.glue.GlueCatalog --conf spark.hadoop.hive.metastore.client.factory.class=com.amazonaws.glue.catalog.metastore.AWSGlueDataCatalogHiveClientFactory --conf spark.sql.catalog.job_catalog.io-impl=org.apache.iceberg.aws.s3.S3FileIO --conf spark.sql.sources.partitionOverwriteMode=dynamic --conf spark.sql.iceberg.handle-timestamp-without-timezone=true"
         }
     }' \
     --configuration-overrides '{
         "monitoringConfiguration": {
             "s3MonitoringConfiguration": {
-                "logUri": "s3://soumilshah-dev-1995/logs/"
+                "logUri": "s3://sonamdesai-dev/logs/"
             }
         }
     }'
@@ -102,14 +102,14 @@ aws emr-serverless start-job-run \
     --execution-role-arn $IAM_ROLE \
     --job-driver '{
         "sparkSubmit": {
-            "entryPoint": "s3://soumilshah-dev-1995/jobs/bronze-silver.py",
+            "entryPoint": "s3://sonamdesai-dev/jobs/bronze-silver.py",
             "sparkSubmitParameters": "--conf spark.jars=/usr/share/aws/iceberg/lib/iceberg-spark3-runtime.jar --conf spark.sql.extensions=org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions --conf spark.sql.catalog.dev.warehouse=s3://XX/warehouse --conf spark.sql.catalog.dev=org.apache.iceberg.spark.SparkCatalog --conf spark.sql.catalog.dev.catalog-impl=org.apache.iceberg.aws.glue.GlueCatalog --conf spark.hadoop.hive.metastore.client.factory.class=com.amazonaws.glue.catalog.metastore.AWSGlueDataCatalogHiveClientFactory --conf spark.sql.catalog.job_catalog.io-impl=org.apache.iceberg.aws.s3.S3FileIO --conf spark.sql.sources.partitionOverwriteMode=dynamic --conf spark.sql.iceberg.handle-timestamp-without-timezone=true"
         }
     }' \
     --configuration-overrides '{
         "monitoringConfiguration": {
             "s3MonitoringConfiguration": {
-                "logUri": "s3://soumilshah-dev-1995/logs/"
+                "logUri": "s3://sonamdesai-dev/logs/"
             }
         }
     }'

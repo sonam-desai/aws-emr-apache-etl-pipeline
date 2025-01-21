@@ -119,6 +119,9 @@ aws emr-serverless start-job-run \
 
 # Step 7: Athena 
 ![image](https://github.com/user-attachments/assets/f28ead5d-9cbb-4287-b0ff-cc28f254e438)
+
+![image](https://github.com/user-attachments/assets/bd18af7f-2b2a-4ea3-a078-257d590c61ca)
+
 ```
 
 SELECT COUNT(*) FROM bronze_orders

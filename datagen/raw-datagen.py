@@ -99,4 +99,4 @@ def write_static_data(output_path, minio_config=None):
 
 
 if __name__ == "__main__":
-    write_static_data('s3://datalake-demo-1995/raw')
+    write_static_data('s3://datalake-demo/raw')

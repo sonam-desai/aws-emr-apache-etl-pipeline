@@ -118,8 +118,8 @@ aws emr-serverless start-job-run \
 ```
 
 # Step 7: Athena 
-```
 ![image](https://github.com/user-attachments/assets/f28ead5d-9cbb-4287-b0ff-cc28f254e438)
+```
 
 SELECT COUNT(*) FROM bronze_orders
 
@@ -129,8 +129,8 @@ SELECT COUNT(*) FROM silver_orders
 
 
 ###  Query Snowflake
-```
 ![image](https://github.com/user-attachments/assets/4b006a87-e966-4661-b32c-75f5bba46cfd)
+```
 
 -- Step 1: Create a new database named TEMPDB
 CREATE DATABASE TEMPDB;
@@ -189,9 +189,9 @@ SELECT * FROM silver_orders
 ```
 ###  Query DuckDB 
 ```
-cd /Users/sshah/IdeaProjects/workshop/aws-scripts/query-engine/duckdbdemo
+cd /Users/sdesai/IdeaProjects/workshop/aws-scripts/query-engine/duckdbdemo
 pip3 install -r requirements.txt
-python3 /Users/sshah/IdeaProjects/workshop/aws-scripts/query-engine/duckdbdemo/read_iceberg_duckdb.py
+python3 /Users/sdesai/IdeaProjects/workshop/aws-scripts/query-engine/duckdbdemo/read_iceberg_duckdb.py
 
 ```
 ####  Query StarRocks
